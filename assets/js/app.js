@@ -1,7 +1,7 @@
 const baseEndpoint = 'https://api.github.com';
 const usersEndpoint = `${baseEndpoint}/users`;
 const $n = document.querySelector('.name'); //the class selector . was missing
-const $b = document.querySelector('.blog'); //blog is a class not an id (needs , instead of #)
+const $b = document.querySelector('.blog'); //blog is a class not an id (needs . instead of #)
 const $l = document.querySelector('.location');
 
 async function displayUser(username) {  //this function must be async
@@ -19,4 +19,4 @@ function handleError(err) {
   console.log(err);
   $n.textContent = `Algo salió mal: ${err}`  //the variable name is $n with dollar sign
 }
-displayUser('stolinski').catch(handleError()); //I still have no idea how catch works :(
+displayUser('stolinski').catch(handleError()); //I still have no idea how catch works srry :(
