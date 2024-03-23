@@ -1,5 +1,4 @@
-const baseEndpoint = 'https://api.github.com';
-const usersEndpoint = `${baseEndpoint}/users`;
+const usersEndpoint = 'https://api.github.com/users'; //I merged the link
 const $n = document.querySelector('.name'); //the class selector . was missing
 const $b = document.querySelector('.blog'); //blog is a class not an id (needs . instead of #)
 const $l = document.querySelector('.location');
